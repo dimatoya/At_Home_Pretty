@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At Home Pretty</title>
+    <!--STYLE CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--FONT PLAYFAIR-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+    <!--FONT CUSTOM-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body id="background">
+
+    <!--NAVIGATION-->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+        <nav class="nav-main">
+            <img src="image/logo.jpg" alt="AtHomePretty LOGO" class="nav-brand">
+            <ul class="nav-menu show">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="electronics.html">Electronics</a>
+                </li>
+                <li>
+                    <a href="health&beauty.html">Health&Beauty</a>
+                </li>
+                <li>
+                    <a href="#">Fashion</a>
+                </li>
+                <li>
+                    <a href="sport.html">Sport</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>          
+    </div>
+
+    <!--TITLE FORM-->
+    <div class="text">
+        <h2>CONTACT FORM</h2>
+        <br>
+        <p>For more information about our services, products, discounts, and others. Please fill in the fields completely, we will contact you by email or by your phone number.</p>
+    </div>
+
+    <!--MAIN FORM-->
+    <div class="parent">
+
+        <!--FORM TXT-->
+        <div class="div1">
+            <form>
+                Firstname: <input type="text" id="usuario" placeholder="Usuario">
+                <br>
+                <br>
+                Lastname: <input type="text" id="apellido" placeholder="Apellido" pattern="[A-Za-z]{2,40}">
+                <br>
+                <br>
+                Contact: <input type="tel" id="contacto" placeholder="Contacto" pattern="[0-9]*">
+                <br>
+                <br>
+                Email: <input type="email" name="Nombre" id="email" placeholder="Email" required>
+                <br>
+                <br>
+                Select: <select name="Seleccionar">
+                    <option selected>Select</option>
+                    <option>Information</option>
+                    <option>Suggestion</option>
+                    <option>Advertisement</option>
+                </select>
+                <br>
+                <br>
+                Message: 
+                <br><textarea name="Comentario" rows="10" cols="40" placeholder="Write your message" minlength="5" maxlength="400"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Send me">
+                <input type="reset" value="Erase everything">
+            </form>
+        </div>
+
+        <!--VIDEO FORM-->
+        <div id="div2">
+            <video src="video/call.mp4" id="mivideo"></video>
+            <nav id="btn_video">
+                <ul>
+                    <li><a href="#" id="repr" onclick="reproducir()"><img src="image/play.svg"></a></li>
+                    <li><a href="#" id="fren" onclick="frenar()"><img src="image/stop.svg"></a></li>
+                    <li><a href="#" id="retr" onclick="saltar(-15)"><img src="image/rewind.svg"></a></li>
+                    <li><a href="#" id="avan" onclick="saltar(15)"><img src="image/forward.svg"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!--SOCIAL MEDIA-->
+    <section class="social">
+        <hr>
+            <p>Follow At Home Pretty</p>
+            <div class="links">
+                <a href="https://www.facebook.com/" target="New">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/?lang=es" target="New">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="New">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="New">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <h3>@DIMATOYA - COPYRIGHT</h3>
+    </footer>
+
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--SCRIPT ECMASCRIPT-->
+    <script src="main.js"></script>
+</body>
+</html>
